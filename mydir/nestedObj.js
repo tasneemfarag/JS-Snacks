@@ -58,3 +58,16 @@ function getArrayOfUsers0(obj) {
   }
   
   console.log(getArrayOfUsers2(users));
+
+
+  //we all going to a family trip and we want to make sure that we don't leave someone behaind (like home alone movie :O)
+  function isEveryoneHere(obj) {
+      var family = ["Tasneem", "Mostafa", "Tameema", "Noah"];
+    if(Object.keys(users) === family){
+        return true;
+    } else {
+    return false;
+    }
+  }
+
+  console.log(isEveryoneHere(users));
